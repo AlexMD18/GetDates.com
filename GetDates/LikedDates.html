@@ -1,0 +1,38 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Liked Profiles</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="../Lab4/Lab4Css/LikedDates.css" rel="stylesheet" type="text/css">
+    <script src="Lab4JavaScript/GetDates.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="Header">
+        <div class="NavBar">
+            <nav>
+                <div class="title"><h1>GetDates</h1></div>
+                <ul>
+                    <li><a href="GetDates.html">Find Love</a></li>
+                    <li><a href="LikedDates.html">Liked Dates</a></li>
+                    <li><a href="Passed.html">Passed Dates</a></li>
+                    <li><a href="MyProfile.html">My Profile</a></li>
+                    <li><a href="SignUp.html">Sign Up</a></li>
+                </ul>
+                <div class="Clear"></div>
+            </nav>
+        </div>
+    </div>
+    <div id="likedDates">
+        <h1>Your Liked Dates!</h1>
+        <p>Here's a list of all the people you have liked. Contact them and find your love!</p>
+        <button onclick="likedDisplay()" class="displayLikesbtn">Display Likes</button>
+        <div id="likedDatesImages">
+        </div>
+    </div>
+
+</body>
+</html>

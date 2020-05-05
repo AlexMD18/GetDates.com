@@ -1,0 +1,228 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>Sign Up!</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="../Lab4/Lab4Css/SignUp.css" rel="stylesheet" type="text/css">
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="Lab4JavaScript/GetDates.js" type="text/javascript"></script>
+    <script src="Lab4JavaScript/ProfileInfo.js" type="text/javascript"></script>
+    <script>
+                /*$(document).ready(function () {
+
+                    addProfile();
+
+                }); //End Ready*/
+
+
+
+                //Found info on how store items in local storage at https://stackoverflow.com/questions/17087636/how-to-save-data-from-a-form-with-html5-local-storage
+                /*function sendToLocalStore()
+                {
+                    var newUsername = document.getElementById("newUsername").value;
+
+                    for(var i = 0; i < profiles.length; i++){
+                        if(profiles[i].title == newUsername){
+                            alert("This username has already been taken.");
+                            return;
+                        }
+                    }
+
+                    localStorage.setItem("newUsername", newUsername);
+
+                    var newName = document.getElementById("newName").value;
+                    localStorage.setItem("newName", newName);
+
+                    var newGender = document.getElementById("newGender").value;
+                    localStorage.setItem("newGender", newGender);
+
+                    var newAge = document.getElementById("newAge").value;
+                    localStorage.setItem("newAge", newAge);
+
+                    var newDescription = document.getElementById("newDescription").value;
+                    localStorage.setItem("newDescription", newDescription);
+
+                    var newCity = document.getElementById("newCity").value;
+                    localStorage.setItem("newCity", newCity);
+
+                    var newState = document.getElementById("newState").value;
+                    localStorage.setItem("newState", newState);
+
+                    var newStatus = document.getElementById("newStatus").value;
+                    localStorage.setItem("newStatus", newStatus);
+
+                    //Found info on https://stackoverflow.com/questions/45571986/local-storage-on-radiobuttons
+                    var newHasKids = document.querySelector('input[name=newHasKids]:checked').value;
+                    localStorage.setItem("newHasKids", newHasKids);
+
+                    var newWantsKids = document.querySelector('input[name=newWantsKids]:checked').value;
+                    localStorage.setItem("newWantsKids", newWantsKids);
+
+                    var newReligion = document.getElementById("newReligion").value;
+                    localStorage.setItem("newReligion", newReligion);
+
+                    var newTypeOfRelationship = document.getElementById("newTypeOfRelationship").value;
+                    localStorage.setItem("newTypeOfRelationship", newTypeOfRelationship);
+                }*/
+    </script>
+</head>
+
+<body>
+	<div class="Header">	
+		<div class="NavBar">
+			<nav>
+				<div class="title"><h1>GetDates</h1></div>
+				<ul>
+					<li><a href="GetDates.html">Find Love</a></li>
+					<li><a href="LikedDates.html">Liked Dates</a></li>
+					<li><a href="Passed.html">Passed Dates</a></li>
+					<li><a href="MyProfile.html">My Profile</a></li>
+					<li><a href="SignUp.html">Sign Up</a></li>
+				</ul>
+				<div class="Clear"></div>
+			</nav>
+		</div>
+	</div>
+	<div id="Profile">
+		<h1>Sign Up for GetDates Now!!</h1>
+		<p>Finding the love of your life is easier than ever now. Just create your profile below and you can start connecting with people right away!</p>
+		<p>* - Required field</p>
+		<form name="SignUpForm">
+			<label>*Profile Image: </label>
+			<input type="text" id="txtProfImage" name="newProfImage" required>
+			<br>	   
+		  <label>*Username: </label>
+			<input type="text" id="txtUsername" name="newUsername" required>
+			<br>
+			<label>*Full Name: </label>
+			<input type="text" id="txtName" name="newName" required>
+			<br>
+			<label>*Gender: </label>
+			<select name="newGender" id="ddlGender" required>
+				<option value="Blank"></option>
+				<option value="Female">Female</option>
+				<option value="Male">Male</option>
+			</select>
+			<br>
+			<label>*Age: </label>
+			<input class="newAge" id="txtAge" placeholder="Ex: 01/01/1900" required>
+			<br>
+			<label>*A Short Profile Description: </label>
+			<input name="newDescription" id="txtDescription" rows="5" cols="65" required>
+			<br>
+			<label>*City: </label>
+			<input type="text" name="newCity" id="txtCity" required>
+			<br>
+			<label>*State: </label>
+			<select name="newState" id="ddlState" required>
+						<option value="Blank"></option>
+						<option value="Alabama">Alabama</option>
+						<option value="Alaska">Alaska</option>
+						<option value="Arizona">Arizona</option>
+						<option value="Arkansas">Arkansas</option>
+						<option value="California">California</option>
+						<option value="Colorado">Colorado</option>
+						<option value="Connecticut">Connecticut</option>
+						<option value="Delaware">Delaware</option>
+						<option value="District Of Columbia">District Of Columbia</option>
+						<option value="Florida">Florida</option>
+						<option value="Georgia">Georgia</option>
+						<option value="Hawaii">Hawaii</option>
+						<option value="Idaho">Idaho</option>
+						<option value="Illinois">Illinois</option>
+						<option value="Indiana">Indiana</option>
+						<option value="Iowa">Iowa</option>
+						<option value="Kansas">Kansas</option>
+						<option value="Kentucky">Kentucky</option>
+						<option value="Louisiana">Louisiana</option>
+						<option value="Maine">Maine</option>
+						<option value="Maryland">Maryland</option>
+						<option value="Massachusetts">Massachusetts</option>
+						<option value="Michigan">Michigan</option>
+						<option value="Minnesota">Minnesota</option>
+						<option value="Mississippi">Mississippi</option>
+						<option value="Missouri">Missouri</option>
+						<option value="Montana">Montana</option>
+						<option value="Nebraska">Nebraska</option>
+						<option value="Nevada">Nevada</option>
+						<option value="New Hampshire">New Hampshire</option>
+						<option value="New Jersey">New Jersey</option>
+						<option value="New Mexico">New Mexico</option>
+						<option value="New York">New York</option>
+						<option value="North Carolina">North Carolina</option>
+						<option value="North Dakota">North Dakota</option>
+						<option value="Ohio">Ohio</option>
+						<option value="Oklahoma">Oklahoma</option>
+						<option value="Oregon">Oregon</option>
+						<option value="Pennsylvania">Pennsylvania</option>
+						<option value="Rhode Island">Rhode Island</option>
+						<option value="South Carolina">South Carolina</option>
+						<option value="South Dakota">South Dakota</option>
+						<option value="Tennessee">Tennessee</option>
+						<option value="Texas">Texas</option>
+						<option value="Utah">Utah</option>
+						<option value="Vermont">Vermont</option>
+						<option value="Virginia">Virginia</option>
+						<option value="Washington">Washington</option>
+						<option value="West Virginia">West Virginia</option>
+						<option value="Wisconsin">Wisconsin</option>
+						<option value="Wyoming">Wyoming</option>
+			</select>
+			<br>
+			<label>*Status: </label>
+			<input type="radio" name="newStatus" id="rdoStatusSingle" value="Single" required>
+			Single
+			<input type="radio" name="newStatus" id="rdoStatusTaken" value="Taken">
+			Taken
+			<br>
+			<label>*Do You Have Kids?</label>
+			<input type="radio" name="newHasKids" id="rdoHasKidsYes" value="Yes" required>
+			Yes
+			<input type="radio" name="newHasKids" id="rdoHasKidsNo" value="No">
+			No
+			<br>
+			<label>*Do You Want Kids?</label>
+			<input type="radio" name="newWantsKids" id="rdoWantsKidsYes" value="Yes" required>
+			Yes
+			<input type="radio" name="newWantsKids" id="rdoWantsKidsNo" value="No">
+			No
+			<br>
+			<label>*Religion: </label>
+			<select name="newReligion" id="ddlReligion" required>
+				<option value="Blank"></option>
+				<option value="Agnostic">Agnostic</option>
+				<option value="Athiest">Athiest</option>
+				<option value="Baptist">Baptist</option>
+				<option value="Buddhist">Buddhist</option>
+				<option value="Catholic">Catholic</option>
+				<option value="Christian">Christian</option>
+				<option value="Hindu">Hindu</option>
+				<option value="Islam">Islam</option>
+				<option value="Muslim">Muslim</option>
+				<option value="Nordic">Nordic</option>
+				<option value="Other">Other</option>
+			  <option value="Panther-Cult">Panther-Cult</option>
+			</select>
+			<br>
+			<label>*Type of Relationship: </label>
+			<select name="newTypeOfRelationship" id="ddlTypeOfRelationship" required>
+				<option value="Blank"></option>
+				<option value="Long-Term">Long-Term</option>
+				<option value="Short-Term">Short-Term</option>
+				<option value="Casual">Casual</option>
+				<option value="Just Friends">Just Friends</option>
+			</select>
+			<br>
+			<button id="btnSubmit" type="submit" value="Submit">Join</button>
+			<button class="Clear-Form" type="reset" value="Clear">Clear</button>
+		</form>
+	</div>
+	<div class="Footer">
+		<footer>
+			<p>Questions? Contact us at: tuj78444@temple.edu</p>
+		</footer>
+	</div>
+</body>
+</html>

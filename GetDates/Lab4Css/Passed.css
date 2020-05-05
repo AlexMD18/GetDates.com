@@ -1,0 +1,108 @@
+body{
+	padding: 0;
+	margin: 0;
+}
+
+.Header{
+	padding: 0;
+	margin: 0;
+	background-image: url("../../Lab3/Lab3-Images/background.jpg");
+	background-size: cover;
+	height: 175px;
+	border-bottom: solid;
+
+}
+
+    .Header h1 {
+        margin: 0;
+        padding-top: 20px;
+        padding-left: 30px;
+        font-family: 'Pacifico', cursive;
+        font-size: 110px;
+    }
+
+.title{
+	display: inline-block;
+	line-height: 75px;
+	font-family: Impact, Haettenschweiler, "Franklin Gothic Bold", "Arial Black", "sans-serif";
+	font-size: 30px;
+	padding: 0 30px;
+	width: 19%;
+	float: left;
+}
+
+.NavBar ul{
+	margin: 0;
+	width: 51%;
+	float: right;
+	font-weight: bold;
+}
+
+.NavBar li{
+	list-style: none;
+	display: inline-block;
+	line-height: 75px;
+}
+
+
+.NavBar li a{
+	display: block;
+	text-decoration: none;
+	font-size: 20px;
+	font-family: 'Arial Rounded MT', Arial, Helvetica, sans-serif;
+	color: black;
+	padding: 0 20px;
+}
+
+.NavBar li a:hover{
+	color: red;
+}
+
+.NavBar li a:active{
+	color: yellow;
+}
+
+nav{
+	background-color:transparent;
+	width: 100%;
+	height: 75px;
+}
+
+.Clear{
+	clear: both;
+}
+
+#passedDates h1 {
+    text-align: center;
+    font-family: 'Arial Rounded MT', Arial, Helvetica, sans-serif;
+}
+
+#passedDates p {
+    text-align: center;
+    font-family: 'Arial Rounded MT', Arial, Helvetica, sans-serif;
+    font-size: 20px;
+}
+
+#passedDates {
+    padding-left: 20px;
+    font-family: 'Arial Rounded MT', Arial, Helvetica, sans-serif;
+    padding-top: 3%;
+}
+
+    #passedDates img {
+        padding-left: 20px;
+    }
+
+.Footer {
+    background-color: #181818;
+    line-height: 50px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    color: ghostwhite;
+    margin: 0;
+}
+
+    .Footer p {
+        margin: 0;
+    }

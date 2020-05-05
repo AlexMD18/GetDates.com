@@ -1,0 +1,183 @@
+﻿<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="utf-8" />
+    <title>GetDates.com</title>
+    <link href="https://fonts.googleapis.com/css?family=Pacifico&display=swap" rel="stylesheet">
+    <link href="../Lab4/Lab4Css/GetDates.css" rel="stylesheet" type="text/css">
+    <script src="Lab4JavaScript/GetDates.js" type="text/javascript"></script>
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+</head>
+<body>
+    <div class="Header">
+        <div class="NavBar">
+            <nav>
+                <div class="title"><h1>GetDates</h1></div>
+                <ul>
+                    <li><a href="GetDates.html">Find Love</a></li>
+                    <li><a href="LikedDates.html">Liked Dates</a></li>
+                    <li><a href="Passed.html">Passed Dates</a></li>
+                    <li><a href="MyProfile.html">My Profile</a></li>
+                    <li><a href="SignUp.html">Sign Up</a></li>
+                </ul>
+                <div class="Clear"></div>
+
+            </nav>
+        </div>
+    </div>
+    <div class="Search">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="searchState">
+                            <label>Search By State: </label>
+                            <select id="ddlState">
+                                <option value="Blank"></option>
+                                <option value="Alabama">Alabama</option>
+                                <option value="Alaska">Alaska</option>
+                                <option value="Arizona">Arizona</option>
+                                <option value="Arkansas">Arkansas</option>
+                                <option value="California">California</option>
+                                <option value="Colorado">Colorado</option>
+                                <option value="Connecticut">Connecticut</option>
+                                <option value="Delaware">Delaware</option>
+                                <option value="Wasington DC">District Of Columbia</option>
+                                <option value="Florida">Florida</option>
+                                <option value="Georgia">Georgia</option>
+                                <option value="Hawaii">Hawaii</option>
+                                <option value="Idaho">Idaho</option>
+                                <option value="Illinois">Illinois</option>
+                                <option value="Indiana">Indiana</option>
+                                <option value="Iowa">Iowa</option>
+                                <option value="Kansas">Kansas</option>
+                                <option value="Kentucky">Kentucky</option>
+                                <option value="Louisiana">Louisiana</option>
+                                <option value="Maine">Maine</option>
+                                <option value="Maryland">Maryland</option>
+                                <option value="Massachusetts">Massachusetts</option>
+                                <option value="Michigan">Michigan</option>
+                                <option value="Minnesota">Minnesota</option>
+                                <option value="Mississippi">Mississippi</option>
+                                <option value="Missouri">Missouri</option>
+                                <option value="Montana">Montana</option>
+                                <option value="Nebraska">Nebraska</option>
+                                <option value="Nevada">Nevada</option>
+                                <option value="New Hampshire">New Hampshire</option>
+                                <option value="New Jersey">New Jersey</option>
+                                <option value="New Mexico">New Mexico</option>
+                                <option value="New York">New York</option>
+                                <option value="North Carolina">North Carolina</option>
+                                <option value="North Dakota">North Dakota</option>
+                                <option value="Ohio">Ohio</option>
+                                <option value="Oklahoma">Oklahoma</option>
+                                <option value="Oregon">Oregon</option>
+                                <option value="Pennsylvania">Pennsylvania</option>
+                                <option value="Rhode Island">Rhode Island</option>
+                                <option value="South Carolina">South Carolina</option>
+                                <option value="South Dakota">South Dakota</option>
+                                <option value="Tennessee">Tennessee</option>
+                                <option value="Texas">Texas</option>
+                                <option value="Utah">Utah</option>
+                                <option value="Vermont">Vermont</option>
+                                <option value="Virginia">Virginia</option>
+                                <option value="Washington">Washington</option>
+                                <option value="West Virginia">West Virginia</option>
+                                <option value="Wisconsin">Wisconsin</option>
+                                <option value="Wyoming">Wyoming</option>
+                            </select>
+                        </div>
+                        <div class="searchWantsKids">
+                            <label>Want Kids: </label>
+                            <select id="ddlWantsKids">
+                                <option value="Blank"></option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="searchHasKids">
+                            <label>Has Kids: </label>
+                            <select id="ddlHasKids">
+                                <option value="Blank"></option>
+                                <option value="Yes">Yes</option>
+                                <option value="No">No</option>
+                            </select>
+                        </div>
+                        <div class="searchReligion">
+                            <label>Religion: </label>
+                            <select id="ddlReligion">
+                                <option value="Blank"></option>
+                                <option value="Agnostic">Agnostic</option>
+                                <option value="Athiest">Athiest</option>
+                                <option value="Baptist">Baptist</option>
+                                <option value="Buddhist">Buddhist</option>
+                                <option value="Catholic">Catholic</option>
+                                <option value="Christian">Christian</option>
+                                <option value="Hindu">Hindu</option>
+                                <option value="Islam">Islam</option>
+                                <option value="Muslim">Muslim</option>
+                                <option value="None">None</option>
+                                <option value="Nordic">Nordic</option>
+                                <option value="Other">Other</option>
+                                <option value="Panther-Cult">Panther-Cult</option>
+                            </select>
+                        </div>
+                        <div class="ageRange">
+                            <label>Age Range: </label>
+                            <select id="ddlAgeRange">
+                                <option value="Blank"></option>
+                                <option value="18">18-25</option>
+                                <option value="28">26-40</option>
+                                <option value="42">41-55</option>
+                                <option value="56">56+</option>
+                            </select>
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+
+    </div>
+    <div class="Select_Gender">
+        <table>
+            <tbody>
+                <tr>
+                    <td>
+                        <div class="selectGendr">
+                            <label>Select Gender: </label>
+                            <select id="ddlGender">
+                                <option value="Blank"></option>
+                                <option value="Male">Male</option>
+                                <option value="Female">Female</option>
+                                <option value="All">Both</option>
+                            </select>
+                        </div>
+                    </td>
+                    <td>
+                        <div class="Go">
+                            <input id="btnGo" type="button" value="GO!">
+                        </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <div class="Instructions">
+        <center><h3>Find Love in 3 Steps:</h3></center>
+        <ul>
+            <li>Select Gender You're Interested In</li>
+            <li>Press Like to Add Person to Favorites.</li>
+            <li>Live Happily Ever After</li>
+            <br>
+        </ul>
+    </div>
+    <div class="Clear"></div>
+
+    <div id="imageDisplay">
+        <div id="profileInfo">
+        </div>
+    </div>
+
+</body>
+</html>
